@@ -1,35 +1,107 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Chatbot</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
 
-    
+    <style>
+        body {
+            background-color: bisque;
+            background-image: url("https://images.pexels.com/photos/2078266/pexels-photo-2078266.jpeg?auto=compress&cs=tinysrgb&w=600");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
 </head>
+
 <body>
+    <section>
+        <nav style="background-color: #25312d;" class=" h-24 p-4">
+            <div class="  mx-auto flex justify-between items-center">
+                <!-- Brand Logo -->
+                <a href="#" class="text-white font-bold text-4xl">କୃଷି ସହାୟକ</a>
+
+                <!-- Navigation Links -->
+                <ul class="flex     items-center   space-x-4">
+                    <li><a href="#" class="text-white hover:text-gray-300  font-semibold  mt-4  text-2xl">Home</a></li>
+                    <li><a href="#" class="text-white hover:text-gray-300  font-semibold  text-2xl">About</a></li>
+                    <li><a href="#" class="text-white hover:text-gray-300  font-semibold  text-2xl">Contact</a></li>
+
+                    <li> <button class="mt-3 mx-4 pb-3 "> <a href="#" style="background-color: #7A9578;   "
+                                class="px-4 py-3 text-xl border border-black rounded-lg mt-4  font-semibold">
+                                Login | SignUp</a> </button>
+                    </li>
+
+
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <!-- ChatBot -->
     <div class="max-w-screen-lg mx-auto px-4">
-        <h1 class="text-7xl font-bold text-center mt-8 mb-4">Krishi Mitra (କୃଷି ମିତ୍ର) </h1>
-        <img src="https://i.pinimg.com/564x/0c/27/21/0c2721817c29d656af203e5c2e696555.jpg" alt="Image" class="chat-image">
-        <div class="chat-container">
+        <h1 class="text-6xl text-black font-bold text-center  mt-12  mb-12">Krishi Mitra କୃଷି ମିତ୍ର </h1>
+        <!-- <img src="https://i.pinimg.com/564x/e1/20/b1/e120b1d8cc357374662614fe2f86ebf1.jpg" alt="Image" -->
+            <!-- class="chat-image"> -->
+        <div style="margin-bottom: 3rem;" class="chat-container text-2xl  font-semibold">
             <!-- Chat messages will be appended here -->
+            ହେଲ୍ପଲାଇନ ନମ୍ବର 155333 ରେ ତୁମର ପ୍ରଶ୍ନ ପଚାର |
         </div>
         <div class="flex items-center mt-4">
             <select id="category" class="chat-input" onchange="showQuestions()">
                 <option value="">Select Category</option>
-                <option  class="text-1xl font-bold text-center mt-8 mb-4" value="local-farmer"> For local farmers: ସ୍ଥାନୀୟ କୃଷକମାନଙ୍କ ପାଇଁ </option>
-                <option class="text-1xl font-bold text-center mt-8 mb-4"  value="gov-insurance"> For Government of Odisha and Insurance Companies: ଓଡିଶା ସରକାର ଏବଂ ବୀମା କମ୍ପାନୀଗୁଡିକ ପାଇଁ </option>
-                <option class="text-1xl font-bold text-center mt-8 mb-4"  value="farming-queries">For Farming Related Queries: ଚାଷ ସମ୍ବନ୍ଧୀୟ ପ୍ରଶ୍ନଗୁଡ଼ିକ ପାଇଁ </option>
+                <option class="text-1xl font-bold text-center mt-8 mb-4" value="local-farmer"> For local farmers:
+                    ସ୍ଥାନୀୟ କୃଷକମାନଙ୍କ ପାଇଁ </option>
+                <option class="text-1xl font-bold text-center mt-8 mb-4" value="gov-insurance"> For Government of Odisha
+                    and Insurance Companies: ଓଡିଶା ସରକାର ଏବଂ ବୀମା କମ୍ପାନୀଗୁଡିକ ପାଇଁ </option>
+                <option class="text-1xl font-bold text-center mt-8 mb-4" value="farming-queries">For Farming Related
+                    Queries: ଚାଷ ସମ୍ବନ୍ଧୀୟ ପ୍ରଶ୍ନଗୁଡ଼ିକ ପାଇଁ </option>
             </select>
-            <select id="questions" class="chat-input"  style="display: none;">
+            <select id="questions" class="chat-input" style="display: none;">
                 <!-- Dropdown options will be added here -->
             </select>
-            <button onclick="askQuestion()" class="chat-submit">Submit</button>
+            <button onclick="askQuestion()" class="chat-submit   mb-24 text-sm p-4" style="background-color: #25312d;">Submit</button>
         </div>
     </div>
+        <!-- Footer -->
+        <footer    style="background-color: black;" class="mt-4 bg-dark dark:bg-black">
+            <div class="mx-auto w-full max-w-screen-xl p-3 py-6 lg:py-6">
+              <div class="md:flex md:justify-between">
+                <div class="mb-4 md:mb-0">
+                  <a href="#" class="flex items-center">
+                    <!-- <img src="./assets/Navbar-Icon.jpeg" class="h-6 me-3" alt="Krishi-Sahayak-Logo" /> -->
+                    <div class="self-center   font-semibold whitespace-nowrap text-3xl ml-6 mt-6 " style="color: white;">କୃଷି
+                      ସହାୟକ</div>
+                  </a>
+                </div>
+                <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                  <div>
+                    <h2 class="mb-6 text-lg  mr-0  font-semibold text-white uppercase mt-2 dark:text-white">Resources</h2>
+                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
+          
+          
+                    </ul>
+                  </div>
+                  <div>
+                    <h2 class="mb-5 text-lg  mr-0 font-semibold text-white uppercase mt-2   dark:text-white">Follow us</h2>
+                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
+          
+          
+                    </ul>
+                  </div>
+          
+                </div>
+              </div>
+              <div class=" mr-6 text-white  text-center mb-4">© 2024 Krishi Sahayta. All rights reserved. | Privacy Policy |
+                Terms of Service | Contact Us</div>
+          
+            </div>
+          </footer>
 
-    
     <script src="script.js"></script>
 
 </body>
+
 </html>

@@ -1,9 +1,4 @@
-body {
-    background-color: #c0cad1; /* Light gray background */
-    background-image: url('https://images.pexels.com/photos/1407305/pexels-photo-1407305.jpeg');
-    background-size: cover; /* Cover the entire background */
-    background-repeat: no-repeat; /* Prevent the background image from repeating */
-}
+ 
 h1{
     color: #fcfcfc;
 }
@@ -53,5 +48,5 @@ h1{
         .chat-image {
             display: block;
             margin: 20px auto;
-            max-width: 200px;
+            width: 300px;
         }
