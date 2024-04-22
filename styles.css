@@ -1,4 +1,18 @@
- 
+main {
+    flex: 1; /* Ensure the main content takes up remaining space */
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: sticky; /* Make the footer sticky */
+    bottom: 0;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
 h1{
     color: #fcfcfc;
 }
