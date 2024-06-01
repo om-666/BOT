@@ -1,1 +1,5 @@
-"# BOT" 
+Krishi Mitra is a vital component of the Krishi Sahayata (KSA) project, designed to provide comprehensive support to farmers in utilizing the application effectively. This chatbot is equipped to handle a wide range of queries and tasks, including guidance on how to claim or apply for insurance, assistance with farming-related issues, and providing information in the Odia language for ease of understanding.
+
+Krishi Mitra serves as a virtual assistant, bridging the gap between farmers and the complexities of the crop insurance settlement process. It is designed to be user-friendly and accessible, ensuring that farmers, insurance companies, and government officials can interact with ease and efficiency.
+
+Through Krishi Mitra, farmers can receive personalized support, access information on demand, and navigate the application seamlessly. This chatbot plays a crucial role in enhancing the overall user experience and ensuring that the benefits of the KSA project reach those who need it most.
