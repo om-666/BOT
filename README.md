@@ -1,5 +1,4 @@
-Absolutely, here's a concise version for your README.md file:
-
+ 
 ---
 
 ## Krishi Mitra Chatbot
